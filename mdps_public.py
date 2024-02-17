@@ -4,18 +4,18 @@ import base64
 
 # Loading the saved models
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
-parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
-breast_cancer_prediction = pickle.load(open('breast_cancer_data.sav','rb'))
+#heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+#parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
+#breast_cancer_prediction = pickle.load(open('breast_cancer_data.sav','rb'))
 
 # Sidebar for navigation
 with st.sidebar:
     selected = option_menu('Multiple Disease Prediction System',
                            ['Diabetes Prediction',
-                            'Heart Disease Prediction',
-                            'Parkinsons Prediction',
-                            'Breast Cancer Prediction'],
-                           icons=['activity','heart','person','building add'],
+                           # 'Heart Disease Prediction',
+                           # 'Parkinsons Prediction',
+                            #'Breast Cancer Prediction'],
+                           icons=['activity'],#'heart','person','building add'],
                            default_index=0)
 
 # Function to get the base64 encoding of a binary file
