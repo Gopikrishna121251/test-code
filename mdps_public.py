@@ -11,12 +11,12 @@ diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 # Sidebar for navigation
 with st.sidebar:
     selected = option_menu('Multiple Disease Prediction System',
-                           ['Diabetes Prediction',
+                           ['Diabetes Prediction'])
                            # 'Heart Disease Prediction',
                            # 'Parkinsons Prediction',
                             #'Breast Cancer Prediction'],
                            #icons=['activity','heart','person','building add'],
-                           default_index=0)
+                          # default_index=0)
 
 # Function to get the base64 encoding of a binary file
 def get_base64_of_bin_file(bin_file):
