@@ -15,7 +15,7 @@ with st.sidebar:
                            # 'Heart Disease Prediction',
                            # 'Parkinsons Prediction',
                             #'Breast Cancer Prediction'],
-                           icons=['activity','heart','person','building add'],
+                           #icons=['activity','heart','person','building add'],
                            default_index=0)
 
 # Function to get the base64 encoding of a binary file
