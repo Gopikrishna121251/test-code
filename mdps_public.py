@@ -26,7 +26,8 @@ def set_png_as_page_bg(png_file):
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Set background image
-set_png_as_page_bg('background.png')
+ set_png_as_page_bg('/absolute/path/to/background.png')
+ 
 
 # Show different pages based on selection
 selected = 'Diabetes Prediction'  # Default selected option for testing
