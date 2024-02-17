@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 import base64
+from streamlit_option_menu import option_menu
 
 # Loading the saved models
 diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
